@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let str1 = 'HELLO'
+        let str2 = 'hello'
+        let str3 = 'World'
+
+        //1.Comparing Strings
+
+        function compareString(str1, str2) {
+            return str1.toLowerCase() === str2.toLowerCase();
+        }
+
+        console.log(compareString(str1, str2));
+        console.log(compareString(str1, str3));
+        
+        //2.Check the word JavaScript
+
+        function check(sentence) {
+            if (sentence.includes("JavaScript")){
+                return "JavaScript found"
+            }
+            else{
+                return "JavaScript not found"
+            }
+        }
+         
+        console.log(check("I am learning JavaScript"));
+        console.log(check("I am learning JS"));
+        
+        //3.Split & Join
+
+        function spajohy(sentence) {
+            let show = sentence.split(" ");
+            return show.join("-");
+        }
+
+        console.log(spajohy("I am learning JS"));
+        
+        //4.slice
+
+        function slice(str, start, end) {
+            return str.slice(start, end);
+        }
+
+        console.log(slice("It's good to see you again after a long time.", 5, 20));
+
+        //5.Destructring
+
+        let someone = {
+            name: "James Bond",
+            age: 24,
+            email: "james24@gmail.com"
+        }
+
+        let { name, age, email} = someone;
+
+        console.log(name);
+        console.log(age);
+        console.log(email);
+        
+    </script>
+</body>
+</html>
+
